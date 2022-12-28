@@ -1,0 +1,238 @@
+$favColor :linear-gradient(to right,#9a9c9d,#eef0f1) ;
+$baseColor : #9a9c9d;
+$favFont :'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, 'Times New Roman', Times, serif, Times, serif ;
+
+@keyframes anime-1 {
+    0%  , 100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    30%{
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    33.33% {
+        transform: scale(1.2);
+        opacity: 0;
+    }
+    66%{
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+@keyframes anime-2 {
+    0% , 30% ,  100%{
+        transform: scale(1);
+        opacity: 0;
+    }
+    33.33%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    63.33%{
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    66.66%{
+        opacity: 0;
+        transform: scale(1.2);
+    }
+}
+@keyframes anime-3 {
+    0% , 100%{
+        transform: scale(1);
+        opacity: 0;
+    }
+    63.33%{
+        transform: scale(1);
+        opacity: 0;
+    }
+    66.66%{
+        opacity: 1;
+        transform: scale(1);
+    }
+    96%{
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    99%{
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}
+@keyframes text-1 {
+    0% , 100% , 32%{
+        bottom: -10em;
+        opacity: 0;
+    }
+    1.9%{
+        bottom: -2em;
+        opacity: 0;
+    }
+    2%{
+        bottom: 0;
+        opacity: 1;
+    }
+    20% , 31.5%{
+        bottom: 0;
+        opacity: 1;
+    }
+}
+@keyframes text-2 {
+    0% , 65% , 100%{
+        opacity: 0;
+        bottom: -10em;
+    }
+    31.9%{
+        bottom: -2em;
+        opacity: 0;
+    }
+    32%{
+        bottom: 0;
+        opacity: 1;
+    }
+    64.5%{
+        bottom: 0;
+        opacity: 1;
+    } 
+    64.5%{
+        bottom: 0;
+        opacity: 1;
+    }  
+}
+@keyframes text-3 {
+    0% , 100%{
+        bottom: -10em;
+        opacity: 0;
+    }
+    64.9%{
+        bottom: -2em;
+        opacity: 0;
+    }
+    65% , 99.5%{
+        opacity: 1;
+        bottom: 0;
+    }
+} 
+
+@keyframes product-1 {
+    100%{
+        top: 50%;
+        opacity: 1;
+    }
+}
+@keyframes product-2 {
+    100%{
+        top: 77%;
+        opacity: 1;
+    }
+}
+@keyframes product-3 {
+    100%{
+        top: 86%;
+        opacity: 1;
+    }
+}
+@keyframes left-to-right {
+    0%{
+        right: -104rem;
+    }
+    100%{
+        right: 88rem;
+    }
+}
+@keyframes right-to-left {
+    0%{
+        left: -104rem;
+    }
+    100%{
+        left: 88rem;
+    }
+}
+
+.flex-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-2{
+    @extend .flex-1;
+    flex-flow: wrap;
+}
+
+.trick-1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;left: 0;
+}
+
+.hoverTrick{
+    position: relative;
+    transform: translateX(-15px);
+    opacity: 0;
+    transition: transform 0.5s , opacity 0.4s 0.2s ;
+}
+.whenHoverit{
+    opacity: 1;
+    transform: translateX(0);
+}
+.buttonTrick{
+    background:$favColor;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 15px;
+    color: #000;
+    font-size: 0.9em;
+    border-radius: 25px;
+    box-shadow: 1px 1px 8px #9a9c9d4b;
+}
+.buttonArrow{
+    transform: translateX(5px);
+    transition: 0.5s;
+}
+.buttonArrowHover{
+    transform: translateX(-1px);
+}
+
+
+
+
+
+
+
+@mixin baseDesign($width,$height,$padding,$margin,$bdrs,$bgColor){
+    width: $width;
+    height: $height;
+    padding:$padding;
+    margin: $margin;
+    border-radius: $bdrs;
+    background: $bgColor;
+}
+
+@mixin fontStyle($fontSize , $fontWeight,$fontFamily,$color){
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    font-family: $fontFamily;
+    color: $color;
+}
+
+@mixin responsive($size){
+    @if($size == S){
+        @media screen and (max-width:540px){
+            @content;
+        }
+    }@else if($size == M){
+        @media  (min-width:541px) and (max-width:912px){
+            @content;
+        }
+    }@else if($size == L){
+        @media (min-width:913px) and (max-width:1200px){
+            @content;
+        }
+    }
+}
