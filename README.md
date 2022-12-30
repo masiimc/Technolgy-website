@@ -21,6 +21,9 @@ Hello ,This site is written by me
 # 🔗Demo project in my linkdin:
 
  my social account :
+ 
   instagram : @mahmudi_web
+  
   linkdein : masome-spring
+  
   codepen : @aurora_22
