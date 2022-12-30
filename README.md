@@ -2,7 +2,7 @@
 
 ✔a responsive website in 3 scope 
 
-🌼developed by Masome Mahmodi
+🌼developed by Masome Mahmodi(me)
 
 🐱‍🏍i used of sass and css & HTMl
 
