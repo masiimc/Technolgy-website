@@ -1,5 +1,7 @@
 # Technolgy-website
 
+Hello ,This site is written by me
+
 ✔a responsive website in 3 scope :
 
 1.Desktop screen
