@@ -12,7 +12,7 @@
 
 🤖i used sass and css & HTMl
 
-🐱‍🏍in this project my challeng was making the web full responsive and the other detailes
+🐱‍🏍in this project my challeng was making the web full responsive and the other detailes on hover
 
 # 🍄Available on :https://masiimc.github.io/Technolgy-website/
 
