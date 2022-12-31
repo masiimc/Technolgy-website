@@ -1,6 +1,6 @@
 # Technolgy-website
 
-Hello ,This site is written by me
+Hello ,This site is written by Masome Mahmudi
 
 ✔a responsive website in 3 scope :
 
