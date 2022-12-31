@@ -16,9 +16,9 @@ Hello ,This site is written by Masome Mahmudi
 
 🐱‍🏍in this project my challeng was making the web full responsive and the other detailes on hover
 
-# 🍄Available on :https://masiimc.github.io/Technolgy-website/
+ 🍄Available on :https://masiimc.github.io/Technolgy-website/
 
-# 🔗Demo project in my linkdin:
+ 🔗Demo project in my linkdin:
 
  my social account :
  
